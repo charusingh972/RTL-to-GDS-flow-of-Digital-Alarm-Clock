@@ -1,0 +1,184 @@
+                          CONFORMAL (R)
+                   Version 20.10-p100 (01-May-2020) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2019. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1990 days old. You can download the latest version from http://downloads.cadence.com.
+
+0
+// Command: read_library slow.lib -liberty -both
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 0.62    seconds
+Elapse time  : 3       seconds
+Memory usage : 275.12  M bytes
+// Command: read_design alarm_mt251.v -verilog -golden
+// Parsing file alarm_mt251.v ...
+// Golden root module is set to 'alarm_mt251'
+// Warning: (RTL1.5a) Assignment with RHS bit width is greater than LHS bit width (occurrence:4)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:8)
+// Warning: (RTL7.10a) Comparison with different data sizes (occurrence:1)
+// Note: (RTL8.1) Multiple multipliers/dividers are in module/entity (occurrence:1)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:2)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:1)
+// Note: Read VERILOG design successfully
+0
+// Command: read_design synthesised_netlist.v -verilog -revised
+// Parsing file synthesised_netlist.v ...
+// Revised root module is set to 'alarm_mt251'
+// Warning: (RTL2.5) Net is referenced without an assignment. Design verification will be based on set_undriven_signal setting (occurrence:31)
+// Warning: (RTL2.13) Undriven pin is detected (occurrence:14)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:14)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:34)
+// Warning: (HRC3.16) A wire is declared, but not used in the module (occurrence:11)
+// Warning: There are 16 undriven nets in Revised
+// Warning: There are 14 undriven pins in Revised
+// Note: Read VERILOG design successfully
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// (F32) Created 3 Z gate(s) for floating net(s) and floating pin(s)
+// (F28) Converted 14 internal output port(s) to inout port(s)
+CPU time     : 0.90    seconds
+Elapse time  : 3       seconds
+Memory usage : 314.45  M bytes
+// Warning: Golden and Revised have different numbers of key points:
+// Golden  key points = 149
+// Revised key points = 152
+// Mapping key points ...
+// Warning: Revised has 3 unmapped key points
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            20     17     112       149     
+--------------------------------------------------------------------------------
+Revised           20     17     112       149     
+================================================================================
+Unmapped points:
+================================================================================
+Revised:
+--------------------------------------------------------------------------------
+Unmapped points   Z         Total   
+--------------------------------------------------------------------------------
+Not-mapped        3         3       
+================================================================================
+// Warning: Key point mapping is incomplete
+0
+// Command: add_compared_points -all
+// 129 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           17     106       123     
+--------------------------------------------------------------------------------
+Non-equivalent       0      6         6       
+================================================================================
+0
+CPU time     : 1.06    seconds
+Elapse time  : 4       seconds
+Memory usage : 341.99  M bytes
+// Command: report_messages -compare -verb
+0
+// Command: report_compare_data -noneq
+Compared points are: Non-equivalent
+  (G) + 64   DFF  /a1m0_pb34_reg[3]
+  (R) + 64   DFF  /a1m0_pb34_reg[3]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1008 MUX  /U$53/U$4
+  (R) + 705  OR   /a1m0_pb34_reg[3]/U$4
+
+Compared points are: Non-equivalent
+  (G) + 65   DFF  /a1m0_pb34_reg[2]
+  (R) + 63   DFF  /a1m0_pb34_reg[2]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1001 MUX  /U$53/U$3
+  (R) + 699  OR   /a1m0_pb34_reg[2]/U$4
+
+Compared points are: Non-equivalent
+  (G) + 66   DFF  /a1m0_pb34_reg[1]
+  (R) + 62   DFF  /a1m0_pb34_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 994  MUX  /U$53/U$2
+  (R) + 693  OR   /a1m0_pb34_reg[1]/U$4
+
+Compared points are: Non-equivalent
+  (G) + 72   DFF  /a0m0_pb34_reg[3]
+  (R) + 49   DFF  /a0m0_pb34_reg[3]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1099 MUX  /U$55/U$4
+  (R) + 615  OR   /a0m0_pb34_reg[3]/U$4
+
+Compared points are: Non-equivalent
+  (G) + 73   DFF  /a0m0_pb34_reg[2]
+  (R) + 48   DFF  /a0m0_pb34_reg[2]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1098 MUX  /U$55/U$3
+  (R) + 609  OR   /a0m0_pb34_reg[2]/U$4
+
+Compared points are: Non-equivalent
+  (G) + 74   DFF  /a0m0_pb34_reg[1]
+  (R) + 47   DFF  /a0m0_pb34_reg[1]/U$1
+Due to these Non-equivalent points:
+[DATA]
+  (G) + 1097 MUX  /U$55/U$2
+  (R) + 603  OR   /a0m0_pb34_reg[1]/U$4
+
+6 Non-equivalent point(s) reported
+6 compared point(s) reported
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           17     106       123     
+--------------------------------------------------------------------------------
+Non-equivalent       0      6         6       
+================================================================================
+0
+// Command: report_verification
+================================================================================
+                            Verification Report
+--------------------------------------------------------------------------------
+Category                                                                  Count
+--------------------------------------------------------------------------------
+1. Non-standard modeling options used:                                      0
+--------------------------------------------------------------------------------
+2. Incomplete verification:                                                 0
+--------------------------------------------------------------------------------
+3. User modification to design:                                             0
+--------------------------------------------------------------------------------
+4. Conformal Constraint Designer clock domain crossing checks recommended:  0
+--------------------------------------------------------------------------------
+5. Design ambiguity:                                                        0
+--------------------------------------------------------------------------------
+6. Compare Results:                                                  FAIL:NONEQ
+================================================================================
+non-equivalence
+// Command: write_compared_points -replace logical_eq_check/lec_compared_points
+0
+// Command: write_mapped_points   -replace logical_eq_check/lec_mapped_points
+0
+// Command: set_verification_information logical_eq_check
+// Verification information is set to /home/prashant25134/Desktop/LEC/intermediate/logical_eq_check.
+// Advanced reporting is enabled and the output is written to /home/prashant25134/Desktop/LEC/intermediate/logical_eq_check
+0
+// Command: write_verification_information
+// Verification information is written to logical_eq_check.
+0

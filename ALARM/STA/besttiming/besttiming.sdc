@@ -1,0 +1,12 @@
+create_clock -name clk_pb34 -period 2.000 [get_ports clk_pb34]
+set_clock_uncertainty 0.05 [get_clocks clk_pb34]
+set in_rst    [get_ports rst_rp38]
+set in_async  [get_ports {btn_s_cs11 btn_c_nm30}]
+set in_sync   [get_ports {set_h_cs11* set_m_nm30* en_a0_pb34 en_a1_rp38 set_a0_cs11 set_a1_nm30}]
+set outs_all  [all_outputs]
+set_input_delay  1.0 -clock clk_pb34 $in_sync
+set_output_delay 1.0 -clock clk_pb34 $outs_all
+set_drive 1.0 $in_sync
+set_load  0.05 $outs_all
+set_false_path -from $in_rst   -to [all_registers]
+set_false_path -from $in_async

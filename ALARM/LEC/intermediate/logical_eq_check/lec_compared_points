@@ -1,0 +1,646 @@
+// Compared points are: Equivalent
+//  (G) + 21   PO   /d0_pb34[3]
+//  (R) + 21   PO   /d0_pb34[3]
+add compared points d0_pb34[3]
+
+// Compared points are: Equivalent
+//  (G) + 22   PO   /d0_pb34[2]
+//  (R) + 22   PO   /d0_pb34[2]
+add compared points d0_pb34[2]
+
+// Compared points are: Equivalent
+//  (G) + 23   PO   /d0_pb34[1]
+//  (R) + 23   PO   /d0_pb34[1]
+add compared points d0_pb34[1]
+
+// Compared points are: Equivalent
+//  (G) + 24   PO   /d0_pb34[0]
+//  (R) + 24   PO   /d0_pb34[0]
+add compared points d0_pb34[0]
+
+// Compared points are: Equivalent
+//  (G) + 25   PO   /d1_rp38[3]
+//  (R) + 25   PO   /d1_rp38[3]
+add compared points d1_rp38[3]
+
+// Compared points are: Equivalent
+//  (G) + 26   PO   /d1_rp38[2]
+//  (R) + 26   PO   /d1_rp38[2]
+add compared points d1_rp38[2]
+
+// Compared points are: Equivalent
+//  (G) + 27   PO   /d1_rp38[1]
+//  (R) + 27   PO   /d1_rp38[1]
+add compared points d1_rp38[1]
+
+// Compared points are: Equivalent
+//  (G) + 28   PO   /d1_rp38[0]
+//  (R) + 28   PO   /d1_rp38[0]
+add compared points d1_rp38[0]
+
+// Compared points are: Equivalent
+//  (G) + 29   PO   /d2_cs11[3]
+//  (R) + 29   PO   /d2_cs11[3]
+add compared points d2_cs11[3]
+
+// Compared points are: Equivalent
+//  (G) + 30   PO   /d2_cs11[2]
+//  (R) + 30   PO   /d2_cs11[2]
+add compared points d2_cs11[2]
+
+// Compared points are: Equivalent
+//  (G) + 31   PO   /d2_cs11[1]
+//  (R) + 31   PO   /d2_cs11[1]
+add compared points d2_cs11[1]
+
+// Compared points are: Equivalent
+//  (G) + 32   PO   /d2_cs11[0]
+//  (R) + 32   PO   /d2_cs11[0]
+add compared points d2_cs11[0]
+
+// Compared points are: Equivalent
+//  (G) + 33   PO   /d3_nm30[3]
+//  (R) + 33   PO   /d3_nm30[3]
+add compared points d3_nm30[3]
+
+// Compared points are: Equivalent
+//  (G) + 34   PO   /d3_nm30[2]
+//  (R) + 34   PO   /d3_nm30[2]
+add compared points d3_nm30[2]
+
+// Compared points are: Equivalent
+//  (G) + 35   PO   /d3_nm30[1]
+//  (R) + 35   PO   /d3_nm30[1]
+add compared points d3_nm30[1]
+
+// Compared points are: Equivalent
+//  (G) + 36   PO   /d3_nm30[0]
+//  (R) + 36   PO   /d3_nm30[0]
+add compared points d3_nm30[0]
+
+// Compared points are: Equivalent
+//  (G) + 37   PO   /bz_pb34
+//  (R) + 37   PO   /bz_pb34
+add compared points bz_pb34
+
+// Compared points are: Equivalent
+//  (G) + 38   DFF  /st_rp38_reg[1]
+//  (R) + 138  DFF  /st_rp38_reg[1]/U$1
+add compared points st_rp38_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 39   DFF  /st_rp38_reg[0]
+//  (R) + 137  DFF  /st_rp38_reg[0]/U$1
+add compared points st_rp38_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 40   DFF  /ring_cs11_reg
+//  (R) + 119  DFF  /ring_cs11_reg/U$1
+add compared points ring_cs11_reg
+
+// Compared points are: Equivalent
+//  (G) + 41   DFF  /snz_ctr_nm30_reg[8]
+//  (R) + 136  DFF  /snz_ctr_nm30_reg[8]/U$1
+add compared points snz_ctr_nm30_reg[8]
+
+// Compared points are: Equivalent
+//  (G) + 42   DFF  /snz_ctr_nm30_reg[7]
+//  (R) + 135  DFF  /snz_ctr_nm30_reg[7]/U$1
+add compared points snz_ctr_nm30_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 43   DFF  /snz_ctr_nm30_reg[6]
+//  (R) + 134  DFF  /snz_ctr_nm30_reg[6]/U$1
+add compared points snz_ctr_nm30_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 44   DFF  /snz_ctr_nm30_reg[5]
+//  (R) + 133  DFF  /snz_ctr_nm30_reg[5]/U$1
+add compared points snz_ctr_nm30_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 45   DFF  /snz_ctr_nm30_reg[4]
+//  (R) + 132  DFF  /snz_ctr_nm30_reg[4]/U$1
+add compared points snz_ctr_nm30_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 46   DFF  /snz_ctr_nm30_reg[3]
+//  (R) + 131  DFF  /snz_ctr_nm30_reg[3]/U$1
+add compared points snz_ctr_nm30_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 47   DFF  /snz_ctr_nm30_reg[2]
+//  (R) + 130  DFF  /snz_ctr_nm30_reg[2]/U$1
+add compared points snz_ctr_nm30_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 48   DFF  /snz_ctr_nm30_reg[1]
+//  (R) + 129  DFF  /snz_ctr_nm30_reg[1]/U$1
+add compared points snz_ctr_nm30_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 49   DFF  /snz_ctr_nm30_reg[0]
+//  (R) + 128  DFF  /snz_ctr_nm30_reg[0]/U$1
+add compared points snz_ctr_nm30_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 50   DFF  /a1e_nm30_reg
+//  (R) + 53   DFF  /a1e_nm30_reg/U$1
+add compared points a1e_nm30_reg
+
+// Compared points are: Equivalent
+//  (G) + 51   DFF  /a0e_cs11_reg
+//  (R) + 38   DFF  /a0e_cs11_reg/U$1
+add compared points a0e_cs11_reg
+
+// Compared points are: Equivalent
+//  (G) + 52   DFF  /a1m1_rp38_flop_reg[2]
+//  (R) + 67   DFF  /a1m1_rp38_flop_reg[2]/U$1
+add compared points a1m1_rp38_flop_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 53   DFF  /a1m1_rp38_flop_reg[1]
+//  (R) + 66   DFF  /a1m1_rp38_flop_reg[1]/U$1
+add compared points a1m1_rp38_flop_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 54   DFF  /a1m1_rp38_flop_reg[0]
+//  (R) + 65   DFF  /a1m1_rp38_flop_reg[0]/U$1
+add compared points a1m1_rp38_flop_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 55   DFF  /a1h1_nm30_flop_reg[2]
+//  (R) + 60   DFF  /a1h1_nm30_flop_reg[2]/U$1
+add compared points a1h1_nm30_flop_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 56   DFF  /a1h1_nm30_flop_reg[1]
+//  (R) + 59   DFF  /a1h1_nm30_flop_reg[1]/U$1
+add compared points a1h1_nm30_flop_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 57   DFF  /a1h1_nm30_flop_reg[0]
+//  (R) + 58   DFF  /a1h1_nm30_flop_reg[0]/U$1
+add compared points a1h1_nm30_flop_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 58   DFF  /a0m1_rp38_flop_reg[2]
+//  (R) + 52   DFF  /a0m1_rp38_flop_reg[2]/U$1
+add compared points a0m1_rp38_flop_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 59   DFF  /a0m1_rp38_flop_reg[1]
+//  (R) + 51   DFF  /a0m1_rp38_flop_reg[1]/U$1
+add compared points a0m1_rp38_flop_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 60   DFF  /a0m1_rp38_flop_reg[0]
+//  (R) + 50   DFF  /a0m1_rp38_flop_reg[0]/U$1
+add compared points a0m1_rp38_flop_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 61   DFF  /a0h1_nm30_flop_reg[2]
+//  (R) + 45   DFF  /a0h1_nm30_flop_reg[2]/U$1
+add compared points a0h1_nm30_flop_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 62   DFF  /a0h1_nm30_flop_reg[1]
+//  (R) + 44   DFF  /a0h1_nm30_flop_reg[1]/U$1
+add compared points a0h1_nm30_flop_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 63   DFF  /a0h1_nm30_flop_reg[0]
+//  (R) + 43   DFF  /a0h1_nm30_flop_reg[0]/U$1
+add compared points a0h1_nm30_flop_reg[0]
+
+// Compared points are: Non-equivalent
+//  (G) + 64   DFF  /a1m0_pb34_reg[3]
+//  (R) + 64   DFF  /a1m0_pb34_reg[3]/U$1
+add compared points a1m0_pb34_reg[3]
+
+// Compared points are: Non-equivalent
+//  (G) + 65   DFF  /a1m0_pb34_reg[2]
+//  (R) + 63   DFF  /a1m0_pb34_reg[2]/U$1
+add compared points a1m0_pb34_reg[2]
+
+// Compared points are: Non-equivalent
+//  (G) + 66   DFF  /a1m0_pb34_reg[1]
+//  (R) + 62   DFF  /a1m0_pb34_reg[1]/U$1
+add compared points a1m0_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 67   DFF  /a1m0_pb34_reg[0]
+//  (R) + 61   DFF  /a1m0_pb34_reg[0]/U$1
+add compared points a1m0_pb34_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 68   DFF  /a1h0_cs11_reg[3]
+//  (R) + 57   DFF  /a1h0_cs11_reg[3]/U$1
+add compared points a1h0_cs11_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 69   DFF  /a1h0_cs11_reg[2]
+//  (R) + 56   DFF  /a1h0_cs11_reg[2]/U$1
+add compared points a1h0_cs11_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 70   DFF  /a1h0_cs11_reg[1]
+//  (R) + 55   DFF  /a1h0_cs11_reg[1]/U$1
+add compared points a1h0_cs11_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 71   DFF  /a1h0_cs11_reg[0]
+//  (R) + 54   DFF  /a1h0_cs11_reg[0]/U$1
+add compared points a1h0_cs11_reg[0]
+
+// Compared points are: Non-equivalent
+//  (G) + 72   DFF  /a0m0_pb34_reg[3]
+//  (R) + 49   DFF  /a0m0_pb34_reg[3]/U$1
+add compared points a0m0_pb34_reg[3]
+
+// Compared points are: Non-equivalent
+//  (G) + 73   DFF  /a0m0_pb34_reg[2]
+//  (R) + 48   DFF  /a0m0_pb34_reg[2]/U$1
+add compared points a0m0_pb34_reg[2]
+
+// Compared points are: Non-equivalent
+//  (G) + 74   DFF  /a0m0_pb34_reg[1]
+//  (R) + 47   DFF  /a0m0_pb34_reg[1]/U$1
+add compared points a0m0_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 75   DFF  /a0m0_pb34_reg[0]
+//  (R) + 46   DFF  /a0m0_pb34_reg[0]/U$1
+add compared points a0m0_pb34_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 76   DFF  /a0h0_cs11_reg[3]
+//  (R) + 42   DFF  /a0h0_cs11_reg[3]/U$1
+add compared points a0h0_cs11_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 77   DFF  /a0h0_cs11_reg[2]
+//  (R) + 41   DFF  /a0h0_cs11_reg[2]/U$1
+add compared points a0h0_cs11_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 78   DFF  /a0h0_cs11_reg[1]
+//  (R) + 40   DFF  /a0h0_cs11_reg[1]/U$1
+add compared points a0h0_cs11_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 79   DFF  /a0h0_cs11_reg[0]
+//  (R) + 39   DFF  /a0h0_cs11_reg[0]/U$1
+add compared points a0h0_cs11_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 80   DFF  /h1_rp38_reg[3]
+//  (R) + 110  DFF  /h1_rp38_reg[3]/U$1
+add compared points h1_rp38_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 81   DFF  /h1_rp38_reg[2]
+//  (R) + 143  DFF  /h1_rp38_reg[2]/U$1
+add compared points h1_rp38_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 82   DFF  /h1_rp38_reg[1]
+//  (R) + 142  DFF  /h1_rp38_reg[1]/U$1
+add compared points h1_rp38_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 83   DFF  /h1_rp38_reg[0]
+//  (R) + 109  DFF  /h1_rp38_reg[0]/U$1
+add compared points h1_rp38_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 84   DFF  /h0_pb34_reg[3]
+//  (R) + 141  DFF  /h0_pb34_reg[3]/U$1
+add compared points h0_pb34_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 85   DFF  /h0_pb34_reg[2]
+//  (R) + 140  DFF  /h0_pb34_reg[2]/U$1
+add compared points h0_pb34_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 86   DFF  /h0_pb34_reg[1]
+//  (R) + 108  DFF  /h0_pb34_reg[1]/U$1
+add compared points h0_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 87   DFF  /h0_pb34_reg[0]
+//  (R) + 139  DFF  /h0_pb34_reg[0]/U$1
+add compared points h0_pb34_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 88   DFF  /m1_nm30_reg[3]
+//  (R) + 147  DFF  /m1_nm30_reg[3]/U$1
+add compared points m1_nm30_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 89   DFF  /m1_nm30_reg[2]
+//  (R) + 118  DFF  /m1_nm30_reg[2]/U$1
+add compared points m1_nm30_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 90   DFF  /m1_nm30_reg[1]
+//  (R) + 117  DFF  /m1_nm30_reg[1]/U$1
+add compared points m1_nm30_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 91   DFF  /m1_nm30_reg[0]
+//  (R) + 146  DFF  /m1_nm30_reg[0]/U$1
+add compared points m1_nm30_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 92   DFF  /m0_cs11_reg[3]
+//  (R) + 145  DFF  /m0_cs11_reg[3]/U$1
+add compared points m0_cs11_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 93   DFF  /m0_cs11_reg[2]
+//  (R) + 116  DFF  /m0_cs11_reg[2]/U$1
+add compared points m0_cs11_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 94   DFF  /m0_cs11_reg[1]
+//  (R) + 115  DFF  /m0_cs11_reg[1]/U$1
+add compared points m0_cs11_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 95   DFF  /m0_cs11_reg[0]
+//  (R) + 144  DFF  /m0_cs11_reg[0]/U$1
+add compared points m0_cs11_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 96   DFF  /s1_rp38_reg[3]
+//  (R) + 127  DFF  /s1_rp38_reg[3]/U$1
+add compared points s1_rp38_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 97   DFF  /s1_rp38_reg[2]
+//  (R) + 126  DFF  /s1_rp38_reg[2]/U$1
+add compared points s1_rp38_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 98   DFF  /s1_rp38_reg[1]
+//  (R) + 125  DFF  /s1_rp38_reg[1]/U$1
+add compared points s1_rp38_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 99   DFF  /s1_rp38_reg[0]
+//  (R) + 124  DFF  /s1_rp38_reg[0]/U$1
+add compared points s1_rp38_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 100  DFF  /s0_pb34_reg[3]
+//  (R) + 123  DFF  /s0_pb34_reg[3]/U$1
+add compared points s0_pb34_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 101  DFF  /s0_pb34_reg[2]
+//  (R) + 122  DFF  /s0_pb34_reg[2]/U$1
+add compared points s0_pb34_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 102  DFF  /s0_pb34_reg[1]
+//  (R) + 121  DFF  /s0_pb34_reg[1]/U$1
+add compared points s0_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 103  DFF  /s0_pb34_reg[0]
+//  (R) + 120  DFF  /s0_pb34_reg[0]/U$1
+add compared points s0_pb34_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 104  DFF  /bc_q_nm30_reg[1]
+//  (R) + 69   DFF  /bc_q_nm30_reg[1]/U$1
+add compared points bc_q_nm30_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 105  DFF  /bc_q_nm30_reg[0]
+//  (R) + 68   DFF  /bc_q_nm30_reg[0]/U$1
+add compared points bc_q_nm30_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 106  DFF  /bs_q_cs11_reg[1]
+//  (R) + 71   DFF  /bs_q_cs11_reg[1]/U$1
+add compared points bs_q_cs11_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 107  DFF  /bs_q_cs11_reg[0]
+//  (R) + 70   DFF  /bs_q_cs11_reg[0]/U$1
+add compared points bs_q_cs11_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 108  DFF  /ic_q_rp38_reg[1]
+//  (R) + 112  DFF  /ic_q_rp38_reg[1]/U$1
+add compared points ic_q_rp38_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 109  DFF  /ic_q_rp38_reg[0]
+//  (R) + 111  DFF  /ic_q_rp38_reg[0]/U$1
+add compared points ic_q_rp38_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 110  DFF  /is_q_pb34_reg[1]
+//  (R) + 114  DFF  /is_q_pb34_reg[1]/U$1
+add compared points is_q_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 111  DFF  /is_q_pb34_reg[0]
+//  (R) + 113  DFF  /is_q_pb34_reg[0]/U$1
+add compared points is_q_pb34_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 112  DFF  /t1_cs11_reg
+//  (R) + 148  DFF  /t1_cs11_reg/U$1
+add compared points t1_cs11_reg
+
+// Compared points are: Equivalent
+//  (G) + 113  DFF  /div1_pb34_reg[19]
+//  (R) + 107  DFF  /div1_pb34_reg[19]/U$1
+add compared points div1_pb34_reg[19]
+
+// Compared points are: Equivalent
+//  (G) + 114  DFF  /div1_pb34_reg[18]
+//  (R) + 106  DFF  /div1_pb34_reg[18]/U$1
+add compared points div1_pb34_reg[18]
+
+// Compared points are: Equivalent
+//  (G) + 115  DFF  /div1_pb34_reg[17]
+//  (R) + 105  DFF  /div1_pb34_reg[17]/U$1
+add compared points div1_pb34_reg[17]
+
+// Compared points are: Equivalent
+//  (G) + 116  DFF  /div1_pb34_reg[16]
+//  (R) + 104  DFF  /div1_pb34_reg[16]/U$1
+add compared points div1_pb34_reg[16]
+
+// Compared points are: Equivalent
+//  (G) + 117  DFF  /div1_pb34_reg[15]
+//  (R) + 103  DFF  /div1_pb34_reg[15]/U$1
+add compared points div1_pb34_reg[15]
+
+// Compared points are: Equivalent
+//  (G) + 118  DFF  /div1_pb34_reg[14]
+//  (R) + 102  DFF  /div1_pb34_reg[14]/U$1
+add compared points div1_pb34_reg[14]
+
+// Compared points are: Equivalent
+//  (G) + 119  DFF  /div1_pb34_reg[13]
+//  (R) + 101  DFF  /div1_pb34_reg[13]/U$1
+add compared points div1_pb34_reg[13]
+
+// Compared points are: Equivalent
+//  (G) + 120  DFF  /div1_pb34_reg[12]
+//  (R) + 100  DFF  /div1_pb34_reg[12]/U$1
+add compared points div1_pb34_reg[12]
+
+// Compared points are: Equivalent
+//  (G) + 121  DFF  /div1_pb34_reg[11]
+//  (R) + 99   DFF  /div1_pb34_reg[11]/U$1
+add compared points div1_pb34_reg[11]
+
+// Compared points are: Equivalent
+//  (G) + 122  DFF  /div1_pb34_reg[10]
+//  (R) + 98   DFF  /div1_pb34_reg[10]/U$1
+add compared points div1_pb34_reg[10]
+
+// Compared points are: Equivalent
+//  (G) + 123  DFF  /div1_pb34_reg[9]
+//  (R) + 97   DFF  /div1_pb34_reg[9]/U$1
+add compared points div1_pb34_reg[9]
+
+// Compared points are: Equivalent
+//  (G) + 124  DFF  /div1_pb34_reg[8]
+//  (R) + 96   DFF  /div1_pb34_reg[8]/U$1
+add compared points div1_pb34_reg[8]
+
+// Compared points are: Equivalent
+//  (G) + 125  DFF  /div1_pb34_reg[7]
+//  (R) + 95   DFF  /div1_pb34_reg[7]/U$1
+add compared points div1_pb34_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 126  DFF  /div1_pb34_reg[6]
+//  (R) + 94   DFF  /div1_pb34_reg[6]/U$1
+add compared points div1_pb34_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 127  DFF  /div1_pb34_reg[5]
+//  (R) + 93   DFF  /div1_pb34_reg[5]/U$1
+add compared points div1_pb34_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 128  DFF  /div1_pb34_reg[4]
+//  (R) + 92   DFF  /div1_pb34_reg[4]/U$1
+add compared points div1_pb34_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 129  DFF  /div1_pb34_reg[3]
+//  (R) + 91   DFF  /div1_pb34_reg[3]/U$1
+add compared points div1_pb34_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 130  DFF  /div1_pb34_reg[2]
+//  (R) + 90   DFF  /div1_pb34_reg[2]/U$1
+add compared points div1_pb34_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 131  DFF  /div1_pb34_reg[1]
+//  (R) + 89   DFF  /div1_pb34_reg[1]/U$1
+add compared points div1_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 132  DFF  /div1_pb34_reg[0]
+//  (R) + 149  DFF  /div1_pb34_reg[0]/U$1
+add compared points div1_pb34_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 133  DFF  /bz_pb34_reg
+//  (R) + 72   DFF  /bz_pb34_reg/U$1
+add compared points bz_pb34_reg
+
+// Compared points are: Equivalent
+//  (G) + 134  DFF  /d3_nm30_reg[3]
+//  (R) + 88   DFF  /d3_nm30_reg[3]/U$1
+add compared points d3_nm30_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 135  DFF  /d3_nm30_reg[2]
+//  (R) + 87   DFF  /d3_nm30_reg[2]/U$1
+add compared points d3_nm30_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 136  DFF  /d3_nm30_reg[1]
+//  (R) + 86   DFF  /d3_nm30_reg[1]/U$1
+add compared points d3_nm30_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 137  DFF  /d3_nm30_reg[0]
+//  (R) + 85   DFF  /d3_nm30_reg[0]/U$1
+add compared points d3_nm30_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 138  DFF  /d2_cs11_reg[3]
+//  (R) + 84   DFF  /d2_cs11_reg[3]/U$1
+add compared points d2_cs11_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 139  DFF  /d2_cs11_reg[2]
+//  (R) + 83   DFF  /d2_cs11_reg[2]/U$1
+add compared points d2_cs11_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 140  DFF  /d2_cs11_reg[1]
+//  (R) + 82   DFF  /d2_cs11_reg[1]/U$1
+add compared points d2_cs11_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 141  DFF  /d2_cs11_reg[0]
+//  (R) + 81   DFF  /d2_cs11_reg[0]/U$1
+add compared points d2_cs11_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 142  DFF  /d1_rp38_reg[3]
+//  (R) + 80   DFF  /d1_rp38_reg[3]/U$1
+add compared points d1_rp38_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 143  DFF  /d1_rp38_reg[2]
+//  (R) + 79   DFF  /d1_rp38_reg[2]/U$1
+add compared points d1_rp38_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 144  DFF  /d1_rp38_reg[1]
+//  (R) + 78   DFF  /d1_rp38_reg[1]/U$1
+add compared points d1_rp38_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 145  DFF  /d1_rp38_reg[0]
+//  (R) + 77   DFF  /d1_rp38_reg[0]/U$1
+add compared points d1_rp38_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 146  DFF  /d0_pb34_reg[3]
+//  (R) + 76   DFF  /d0_pb34_reg[3]/U$1
+add compared points d0_pb34_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 147  DFF  /d0_pb34_reg[2]
+//  (R) + 75   DFF  /d0_pb34_reg[2]/U$1
+add compared points d0_pb34_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 148  DFF  /d0_pb34_reg[1]
+//  (R) + 74   DFF  /d0_pb34_reg[1]/U$1
+add compared points d0_pb34_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 149  DFF  /d0_pb34_reg[0]
+//  (R) + 73   DFF  /d0_pb34_reg[0]/U$1
+add compared points d0_pb34_reg[0]
+
+// 129 compared points written

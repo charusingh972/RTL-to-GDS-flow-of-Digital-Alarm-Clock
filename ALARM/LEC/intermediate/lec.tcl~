@@ -1,0 +1,31 @@
+###############################################################
+# lec_alarm.tcl – Formal Equivalence Check for alarm_mt251
+###############################################################
+
+file mkdir logical_eq_check
+set_log_file logical_eq_check/logical_equivalence_checking.log -replace
+
+# Read standard-cell Liberty file
+read_library slow.lib -liberty -both
+
+# Golden = RTL
+read_design alarm_mt251.v -verilog -golden
+
+# Revised = synthesized netlist
+read_design synthesised_netlist.v -verilog -revised
+
+# Switch to equivalence checking mode
+set_system_mode lec
+add_compared_points -all
+compare
+
+# Reports
+report_messages -compare -verb
+report_compare_data -noneq
+report_verification
+
+# Write detailed mapping
+write_compared_points -replace logical_eq_check/lec_compared_points
+write_mapped_points   -replace logical_eq_check/lec_mapped_points
+set_verification_information logical_eq_check
+write_verification_information

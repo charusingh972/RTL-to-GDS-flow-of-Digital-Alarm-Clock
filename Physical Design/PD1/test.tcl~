@@ -1,0 +1,165 @@
+
+
+# 0) reports dir
+file mkdir reports
+file mkdir reports/placement 
+file mkdir reports/timing 
+file mkdir reports/area 
+file mkdir reports/power   
+set report_dir reports
+
+# 1) PG nets before init
+set init_pwr_net VDD
+set init_gnd_net GND
+
+# 2) inputs
+set init_io_file   pinlocation.io
+set init_lef_file  gsclib090_translated_ref.lef
+set init_mmmc_file elevator_ctrl.view
+set init_top_cell  elevator_ctrl_6
+set init_verilog   ./arbiterderoptimal.v
+
+# 3) read design
+init_design
+setDesignMode -process 90 -flowEffort standard
+
+
+
+# 4) floorplan
+getIoFlowFlag
+setIoFlowFlag 0
+
+
+
+# PRE-PLACEMENT REPORTS (NEW - Required by assignment!)
+report_timing -late > reports/timing/01_pre_placement_timing_setup_GBA.rpt
+report_timing -early > reports/timing/01_pre_placement_timing_hold_GBA.rpt
+reportGateCount > reports/area/01_pre_placement_gate_count.rpt
+report_area -detail > reports/area/01_pre_placement_area_detail.rpt
+report_power > reports/power/01_pre_placement_power.rpt
+
+
+
+floorPlan -site gsclib090site -r 1 0.5 4 4 4 4
+
+
+
+# 6) power planning 
+addRing \
+  -skip_via_on_wire_shape Noshape \
+  -skip_via_on_pin Standardcell \
+  -center 1 \
+  -stacked_via_top_layer Metal9 \
+  -type core_rings \
+  -jog_distance 0.435 \
+  -threshold 0.435 \
+  -nets {GND VDD} \
+  -follow core \
+  -stacked_via_bottom_layer Metal1 \
+  -layer {bottom Metal8 top Metal8 right Metal9 left Metal9} \
+  -width 1.25 \
+  -spacing 0.4 \
+  -offset 0.435
+
+addStripe \
+  -skip_via_on_wire_shape Noshape \
+  -block_ring_top_layer_limit Metal9 \
+  -max_same_layer_jog_length 0.88 \
+  -padcore_ring_bottom_layer_limit Metal7 \
+  -number_of_sets 10 \
+  -skip_via_on_pin Standardcell \
+  -stacked_via_top_layer Metal9 \
+  -padcore_ring_top_layer_limit Metal9 \
+  -spacing 0.4 \
+  -merge_stripes_value 0.435 \
+  -layer Metal8 \
+  -block_ring_bottom_layer_limit Metal7 \
+  -width 0.44 \
+  -nets {VDD GND} \
+  -stacked_via_bottom_layer Metal1
+
+# 7) global nets
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect GND -type pgpin -pin GND -inst *
+applyGlobalNets
+sroute -connect { corePin } \
+  -layerChangeRange { Metal1 Metal9 } \
+  -blockPinTarget { nearestTarget } \
+  -corePinTarget { firstAfterRowEnd } \
+  -allowJogging 1 \
+  -crossoverViaLayerRange { Metal1 Metal9 } \
+  -nets { VDD GND } \
+  -allowLayerChange 1 \
+  -targetViaLayerRange { Metal1 Metal9 }
+
+
+
+
+
+
+
+defIn /home/bhupesh25109/Desktop/elevator_project/Physical_Design/arbiteroptimal.def
+
+
+# 8) placement
+setPlaceMode -fp false
+placeDesign
+
+
+
+#/*Clock Tree Synthesis*/
+create_ccopt_clock_tree_spec
+
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+
+#/*Post-CTS timing report generation*/
+#/*Setup Timing check*/
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix rtl_module_postCTS -outDir timingReports
+#/*Hold Timing Check*/
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix rtl_module_postCTS -outDir timingReports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 10) POST-PLACEMENT REPORTS (NEW - All required reports!)
+reportPlace > reports/placement/02_post_placement_report.rpt
+report_design > reports/placement/02_post_placement_design_summary.rpt
+reportGateCount > reports/area/02_post_placement_gate_count.rpt
+report_area -detail > reports/area/02_post_placement_area_detail.rpt
+reportInst -physical > reports/area/02_post_placement_instances.rpt
+reportCongestion > reports/placement/02_post_placement_congestion.rpt
+verifyConnectivity -type pg > reports/placement/02_post_placement_pg_connectivity.rpt
+
+# Timing reports
+report_timing -late > reports/timing/02_post_placement_timing_setup_GBA.rpt
+report_timing -early > reports/timing/02_post_placement_timing_hold_GBA.rpt
+report_timing -late -retime path_slew_propagation > reports/timing/02_post_placement_timing_setup_PBA.rpt
+report_timing -late -retime path_slew_propagation > reports/timing/02_post_placement_timing_hold_PBA.rpt
+# Power reports
+report_power > reports/power/02_post_placement_power_summary.rpt
+report_power -hierarchy all > reports/power/02_post_placement_power_detailed.rpt
+
+
+

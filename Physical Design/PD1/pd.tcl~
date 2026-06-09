@@ -1,0 +1,114 @@
+file mkdir reports
+set report_dir reports
+set init_gnd_net GND
+set init_io_file alarm_mt251.io
+set init_lef_file gsclib090_translated_ref.lef
+set init_mmmc_file alarm_mt251.view
+set init_pwr_net VDD
+set init_top_cell alarm_mt251
+set init_verilog arbiterderoptimal.v
+init_design
+setDesignMode -process 90 -flowEffort standard
+
+#/*Floorplanning*/
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site gsclib090site -r 1 0.8 4 4 4 4
+
+#/*Power Planning*/
+#/*Adding Rings*/
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer Metal9 -type core_rings -jog_distance 0.435 -threshold 0.435 -nets {GND VDD} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal8 top Metal8 right Metal9 left Metal9} -width 1.25 -spacing 0.4 -offset 0.435
+
+#/*Adding Stripes*/
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal9 -max_same_layer_jog_length 0.88 -padcore_ring_bottom_layer_limit Metal7 -number_of_sets 10 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal9 -padcore_ring_top_layer_limit Metal9 -spacing 0.4 -merge_stripes_value 0.435 -layer Metal8 -block_ring_bottom_layer_limit Metal7 -width 0.44 -nets {VDD GND} -stacked_via_bottom_layer Metal1
+
+#/*Placement*/
+
+# defIn /home/shreemann24206/Desktop/VDF/LIFT/Physical_Design/Util_80/Routing/dft_report/lift.def
+setPlaceMode -fp false
+placeDesign
+
+
+#/*Clock Tree Synthesis*/
+create_ccopt_clock_tree_spec
+
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+
+#/*Post-CTS timing report generation*/
+#/*Setup Timing check*/
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix rtl_module_postCTS -outDir timingReports
+#/*Hold Timing Check*/
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix rtl_module_postCTS -outDir timingReports
+
+#Optimizing design if timing violation
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS; # for setup violation
+optDesign -postCTS -hold; #for hold violation
+
+
+#/*Global & Detail Routing*/l
+#routeDesign-->Super command
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+#setNanoRouteMode -quiet -routeTopRoutingLayer 7
+#setNanoRouteMode -quiet -routeBottomRoutingLayer 3
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+#/*RC Extraction*/
+#extractRC
+#rcOut -setload rtl_module.setload
+#rcOut -setres rtl_module.setres
+#rcOut -spf rtl_module.spf
+#rcOut -spef rtl_module.spef
+#/*Writing SDF file with interconnect and gates delay*/
+write_sdf -ideal_clock_network physical_design_rtl_module.sdf
+#/*Generating gate count report*/
+#summaryReport -outdir summaryReport
+reportGateCount -level 5 -limit 100 -outfile rtl_module.gateCount
+
+reportGateCount -level 5 -limit 100 -outfile lift.gateCount
+
+
+report_timing -late > $report_dir/timing_setup_report_GBA.rpt
+report_timing -early > $report_dir/timing_hold_report_GBA.rpt
+report_timing -retime path_slew_propagation -max_path 100 -nworst 100 -format retime_slew > $report_dir/timing_setup_report_PBA.rpt
+report_timing -retime path_slew_propagation -max_path 100 -nworst 100 -early -format retime_slew > $report_dir/timing_hold_report_PBA.rpt
+
+
+# Area Analysis
+report_area -detail > $report_dir/Total_Area.rpt
+
+#/*Power Analysis*/
+set_power_analysis_mode -reset
+set_power_analysis_mode -method static -analysis_view view1 -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+set_power_output_dir -reset
+set_power_output_dir ./
+set_default_switching_activity -reset
+set_default_switching_activity -input_activity 0.2 -period 10
+read_activity_file -reset
+set_power -reset
+set_powerup_analysis -reset
+set_dynamic_power_simulation -reset
+report_power -rail_analysis_format VS -outfile .//lift.rpt
+report_power
+report_power -rail_analysis_format VS -outfile ./reports/lift.rpt
+report_power -outfile ./reports/power_report.rpt
+
+
+
+
+#timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix rtl_module_postCTS_PostOpt -outDir timingReports
+#show -gui
+
+#/*Generating GDS*/
+streamOut lift.gds -mapFile streamOut.map -libName DesignLib -units 2000 -mode ALL
+
+#/*Saving the Design*/
+saveNetlist rtl_module_post_route_netlist.v
+defOut -floorplan -netlist -routing lift.def
+saveDesign new_uptoGDS.enc

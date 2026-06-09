@@ -1,0 +1,27 @@
+# ------------------------------------------------------------
+# Genus run — alarm_mt251 with intermediate.sdc
+# ------------------------------------------------------------
+set_attr lib_search_path .
+set_attr hdl_search_path .
+set_attr library {slow.lib}
+
+file mkdir syn_report_intermediate
+
+read_hdl {alarm_mt251.v}
+elaborate alarm_mt251
+
+read_sdc {intermediate.sdc}
+
+synthesize -to_mapped -effort medium
+
+write_sdf  -timescale ns -nonegchecks -recrem split -edges check_edge > syn_report_intermediate/delays.sdf
+write_hdl  > syn_report_intermediate/synthesised_netlist.v
+write_sdc  > syn_report_intermediate/dc_file_for_physical_design.sdc
+write_script > syn_report_intermediate/synthesis_script_sdc.g
+
+report timing > syn_report_intermediate/synthesis_timing_report.rep
+report power  > syn_report_intermediate/synthesis_power_report.rep
+report gates  > syn_report_intermediate/synthesis_cell_report.rep
+report area   > syn_report_intermediate/synthesis_area_report.rep
+
+exit
